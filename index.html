@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management | Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Event Management</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="create-event.html">Create Event</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to the Event Management System</h1>
+        <p>Create, register, and manage events seamlessly.</p>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="events">
+        <h2>Upcoming Events</h2>
+        <div id="events-container">
+            <!-- Dynamic Event List -->
+        </div>
+    </section>
+
+<!-- Registration Form Popup -->
+<div id="registration-popup" class="popup" style="display:none;">
+    <h2>Register for Event</h2>
+    <form id="registrationForm">
+        <label for="userName">Your Name:</label>
+        <input type="text" id="userName" required>
+        
+        <label for="userEmail">Your Email:</label>
+        <input type="email" id="userEmail" required>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+<!-- Ticket Display -->
+<section id="ticket-container" class="ticket" style="display:none;">
+    <h2>Registration Successful!</h2>
+    <div id="ticket-details"></div>
+</section>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Event Management. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
